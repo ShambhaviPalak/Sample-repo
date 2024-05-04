@@ -1,0 +1,17 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+.my-style {
+  background-color: #F8D082;
+  color: #B51B75;
+  padding-left: 280px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;/*20% is a bigger gap we can use.*/
+  margin-bottom: 20px;/*or margin:20px; if all margin same.*/
+  display: block;
+}

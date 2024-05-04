@@ -1,0 +1,20 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+.parent {
+  position: relative;
+  background-color: #E2DFD0;
+  width: 100%;/*300px*/
+  height: 300px;
+}
+.child {
+  /*display: inline-block;*/
+  position: absolute;
+  background-color: #524C42;
+  width: 100px;
+  height: 100px;
+  margin: 2px;/*or 2px 4px 8px 10px as top right bottom left or decimal also used.*/
+  top: 0;/*or bottom: 0; makes the child in parent down*/
+  right: 0;
+}
