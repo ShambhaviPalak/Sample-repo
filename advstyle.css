@@ -1,0 +1,91 @@
+/** {
+  margin: 0;
+  padding: 0;
+}
+
+ a:link {
+   color: green;
+ }
+
+a:visited {
+  color: red;
+}
+
+a:active {
+  color: blue;
+}
+ a:hover {
+   color: yellow;
+ }*/
+
+ /*.container p:first-child {
+   color: red;
+ }
+
+ .container p:last-child {
+   color: red;
+ }
+
+ .container p:nth-child(2) {
+   color: red;
+ }
+
+ .container p:nth-child(2n+1) {
+   color: red;
+ }
+
+ .container p:nth-child(even) {
+   color: red;
+ }*/
+
+/* p::before {
+   content: "Hello";
+   background-color: red;
+   color: #fff;
+   display: block;
+ }
+
+p::after {
+  content: "World";
+  background-color: green;
+  color: #fff;
+  display: block;
+}*/
+
+/*  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  background-color: red;
+/*  transition-property: all;/*or width or height*/
+/*  transition-delay: 1s;*/
+/*  transition-duration: 0.5s;*/
+/*transition: all 0.5s;
+}
+
+div:hover {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: blue;
+  transform: rotate(180deg);
+}*/
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  animation: 10s abc infinite;
+  animation-delay: 2s;
+}
+
+@keyframes abc {
+20% {
+  margin-left: 500px;
+  background-color: red;
+}
+50% {
+  margin-left: 500px;
+  background-color: black;
+  transform: rotate(30deg);
+}
+}
