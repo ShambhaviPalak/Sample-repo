@@ -183,7 +183,188 @@ do {
   }
   num++;
 }while(num<=100);*/
-var a=0;
+/*var a=0;
 do {
   console.log("hey");
-}while(a>0) ;
+}while(a>0) ;*/
+
+//FUNCTIONS
+
+/*const items = {
+  food: 1000,
+  drinks: 2000,
+};
+var cart = 0;//HOISTING
+function addToCart(parameter) {//parameter
+  cart+= parameter;
+}
+addToCart(items.food);//argument
+addToCart(items.drinks);
+console.log("cart:",cart);
+*/
+
+/*const items = {
+  food: 1000,
+  drinks: 2000,
+};
+cart = 0;
+function addToCart(item) {
+  return cart+item;
+}
+function addCartValue(item) {
+  cart=addToCart(item);
+}
+
+ addCartValue(items.food);
+ console.log("cart:",cart);
+ var cart;*/
+
+//ARROW FUNCTION
+/* const items = {
+   food: 1000,
+   drinks: 2000,
+};
+ cart = 0;
+ var addToCart=(item)=> {
+   return cart+item;
+ }
+ var addCartValue=(item)=> {
+   cart=addToCart(item);
+ }
+
+  addCartValue(items.food);
+  console.log("cart:",cart);
+  var cart;
+*/
+
+/*myFunction();
+function myFunction(){
+ console.log("Hello World!");
+}*/
+
+/*const myFunction=()=>console.log("Hello World!");
+myFunction();*/
+
+//this
+/*const OurObject= {
+  name: "this keyword",
+  getThis: function()  {//()=>{
+    console.log(this);
+  }
+};
+OurObject.getThis();
+*/
+/*function getThis() {
+console.log(this);
+}
+const arrowGetThis=()=> {
+  console.log(this);
+};
+arrowGetThis();
+*/
+
+//ARRAYS
+
+/*var myArray=[1,2,3,4,5,6];
+console.log(myArray);
+myArray.push(7);//add at last
+console.log(myArray);
+myArray.pop();//remove from last
+console.log(myArray);
+myArray.unshift(0);//add to front
+console.log(myArray);
+myArray.shift();//remove from front
+console.log(myArray);
+*/
+
+/*var num=1;
+function printNum() {
+  console.log(num);
+  num++;
+  if(num<=10) {
+    printNum();
+  }
+  else {
+    console.log("Hello");
+    return;
+  }
+}
+printNum();
+*/
+
+/*const myArray=[1,2,3,4,5];
+myArray[0];*/
+//D structuring
+/*function getArray() {
+  return [1,2];
+}
+const [x,y,z]=getArray();
+console.log(x);
+console.log(y);
+console.log(z);
+*/
+
+/*var myArray=[1,2,3];
+const newArray=myArray.map((e) => (e+1));//modify the element
+console.log(newArray);
+console.log(myArray);*/
+
+/*var myArray=[10,20,50];
+const newArray=myArray.filter(//checks if condition satisfied
+  e => e<50
+);
+console.log(newArray);
+console.log(myArray);
+*/
+
+//ES 6
+/*function hello (name="world") {
+  console.log("hello "+name);
+}
+hello("Shambhavi");
+*/
+
+//TEMPLATE LITERALS
+/*console.log("Apple\nBanana\nGrapes\nMango");
+console.log("-----------------------------------");
+console.log(  `
+  Apple
+  Banana
+  Grapes
+  Mango
+  `);
+*/
+
+//SCOPING
+/*function outer() {
+  var name1="xyz";
+  let name2="pqr";
+function inner() {
+  let name2="ppqqrr";
+  console.log(name2);
+}
+inner();
+//console.log(name1);
+console.log(name2);
+}
+outer();
+*/
+
+//ASYNCHRONOUS JS
+//PROMISES
+//ASYNC AWAIT
+
+/*console.log(fetch("https://jsonplaceholder.typicode.com/").then((result)=>
+console.log(result))
+);*/
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then((result) => result.json())
+.then((data) => console.log(data));//at the time only once can be fetched
+console.log("-----------------------------------------------");
+const getData = async () => {
+  const result = await fetch ("https://jsonplaceholder.typicode.com/users");
+  const data = await result.json();
+  console.log(data);
+};
+getData();
